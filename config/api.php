@@ -69,7 +69,7 @@ return [
     |
     */
 
-    'domain' => env('API_DOMAIN', 'api.larabbs.com'),
+    'domain' => env('API_DOMAIN', ''),
 
     /*
     |--------------------------------------------------------------------------
