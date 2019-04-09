@@ -52,6 +52,9 @@ $api->version('v1',[
 
 
         //游客可以访问的接口
+        //分类列表
+        $api->get('categories','CategoriesController@index')->name('api.categories.index');
+
 
         //需要 token验证的接口
         $api->group(['middleware'=>'api.auth'],function($api){
@@ -64,7 +67,7 @@ $api->version('v1',[
             //图片资源
             $api->post('images', 'ImagesController@store')->name('api.images.store');
         });
-        
+
     });
 
 });
